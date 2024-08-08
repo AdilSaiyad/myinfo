@@ -1,0 +1,8 @@
+Add SSH key for BitBUcket
+
+1) Generate an SSH key: ssh-keygen -t rsa -C "your-email-address"
+2) Press Enter key until a randomart image is generated.
+3) Log into Bitbucket -> View profile -> Manage account -> SSH keys -> Add key
+4) Paste the key you have generated in Step 1 in the text box. To get the key, run the following command: cat ~/.ssh/id_rsa.pub
+5) Go to your repository -> Clone. Now you can see the SSH url for your repository. Copy it.
+6) Clone your repository: git clone <ssh-url>
